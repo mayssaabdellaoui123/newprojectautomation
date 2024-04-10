@@ -37,29 +37,29 @@ public class TestListener extends BaseFile implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        String location = "images/";
-        String methodName = result.getName();
-        if(result.getThrowable() != null){
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            result.getThrowable().printStackTrace(pw);
-            System.out.println(sw.toString());
+      //  String location = "images/";
+      //  String methodName = result.getName();
+      //  if(result.getThrowable() != null){
+      //      StringWriter sw = new StringWriter();
+      //      PrintWriter pw = new PrintWriter(sw);
+      //      result.getThrowable().printStackTrace(pw);
+      //      System.out.println(sw.toString());
             //k nhebou na3mlou screeshot :
-            getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            File snapshot = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+      //      getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+       //     File snapshot = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
             //bech na3mlou dossier jdid : path eli chyethal fih l screenshot w esm te3 image :
-            try {
-                FileUtils.copyFile(snapshot, new File(location + methodName + screenshotCounter +"_" + ".png"));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+       //     try {
+       //         FileUtils.copyFile(snapshot, new File(location + methodName + screenshotCounter +"_" + ".png"));
+       //     } catch (IOException e) {
+       //         e.printStackTrace();
+       //     }
 
         }
-        if (getDriver() instanceof WebDriver){
-            System.out.println("Screenshot captured for test case:" + methodName);
-            saveScreenshotPNG(getDriver());
-        }
-        saveTextLog(getTestMethodeName(result) + " failed and screenshot taken" );
+  //      if (getDriver() instanceof WebDriver){
+  //          System.out.println("Screenshot captured for test case:" + methodName);
+   //         saveScreenshotPNG(getDriver());
+   //     }
+   //     saveTextLog(getTestMethodeName(result) + " failed and screenshot taken" );
 
     }
 
