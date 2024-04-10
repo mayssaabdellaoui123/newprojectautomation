@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"></listener>
+        <!--listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" /-->
+
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:\Users\abdel\Desktop\mayssapfe\PFE-ALM-TestAutomation-main\TestAutomation-main\PFE">
+        <classes >
+            <class name="testcases.testfordocker"></class>
+            <!--class name="testcases.ConcentrationRiskTestCases"></class-->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,1 @@
+{"uuid":"d9c045a9-514d-4d10-ad54-1440c12b38c9","name":"testcases.Loginstepcase.clean","children":["41b9b1b1-011c-4e25-be5a-1451ecfc5af7"],"description":"","befores":[],"afters":[{"name":"clean","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1658763524936,"stop":1658763524936}],"start":1658763524935,"stop":1658763524936}
