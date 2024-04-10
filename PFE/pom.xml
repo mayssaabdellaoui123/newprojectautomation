@@ -62,7 +62,7 @@
                         </property>
                     </systemProperties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${Dsurefire.suiteXmlFiles}</suiteXmlFile>
+                        <suiteXmlFile>${DxmlSuiteFileName}</suiteXmlFile>
                     </suiteXmlFiles>
                     <!--suiteXmlFiles>
                         <suiteXmlFile>C:\Users\abdel\Desktop\mayssapfe\PFE-ALM-TestAutomation-main\TestAutomation-main\PFE\testng.xml</suiteXmlFile>
