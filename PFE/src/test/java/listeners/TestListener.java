@@ -54,7 +54,7 @@ public class TestListener extends BaseFile implements ITestListener {
        //         e.printStackTrace();
        //     }
 
-        }
+    //    }
   //      if (getDriver() instanceof WebDriver){
   //          System.out.println("Screenshot captured for test case:" + methodName);
    //         saveScreenshotPNG(getDriver());
