@@ -61,7 +61,7 @@
                             <value>${project.build.directory}/allure-results</value>
                         </property>
                        <property>
-                        <name>webdriver.remote.url</name>
+                        <name>Dwebdriver.remote.url</name>
                         <value>http://localhost:4444/wd/hub</value>
                         </property>
                     </systemProperties>
