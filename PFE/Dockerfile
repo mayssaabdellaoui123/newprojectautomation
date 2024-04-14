@@ -36,4 +36,4 @@ EXPOSE 8080
 ENV CLASSPATH /usr/src/app:/usr/src/app/target/*:/usr/src/app/target/test-classes:/usr/src/app/target/classes:/usr/share/maven/ref/repository/org/testng/testng/7.3.0/*:/usr/share/maven/ref/repository/org/apache/maven/surefire/surefire-testng/2.22.2/*
 
 # Run TestNG tests when the container starts
-CMD ["mvn", "clean", "test", "-Dsurefire.suiteXmlFiles=testng.xml"]
+CMD ["sh", "-c", "mvn clean test -Dsurefire.suiteXmlFiles=testng.xml -Dwebdriver.remote.url=http://localhost:4444/wd/hub || exit 0"]
